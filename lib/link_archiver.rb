@@ -23,12 +23,27 @@ class LinkArchiver
       errors: nil
     }
 
-    archive_request_response = Typhoeus.head("https://web.archive.org/save/#{url}")
+    request = Typhoeus::Request.new(
+      "https://web.archive.org/save/#{url}",
+      method: :head
+    )
 
-    response_details[:syndication] = [
-      "https://web.archive.org",
-      archive_request_response.headers['content-location']
-    ].join
+    request.on_complete do |response|
+      if response.success?
+        response_details[:syndication] = [
+          "https://web.archive.org",
+          response.headers['content-location']
+        ].join
+      else
+        response_details[:errors] = [
+          response.code.to_s + ': ',
+          response.status_message,
+          response.headers.dig('X-Archive-Wayback-Runtime-Error')
+        ].join
+      end
+    end
+
+    request.run
 
     response_details
   end

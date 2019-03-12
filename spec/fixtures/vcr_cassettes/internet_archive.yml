@@ -574,4 +574,42 @@ http_interactions:
       string: ''
     http_version: 
   recorded_at: Tue, 12 Mar 2019 10:26:01 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/https://minerals.org.au
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 502
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 10:41:17 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      X-Archive-Wayback-Runtime-Error:
+      - 'LiveDocumentNotAvailableException: https://minerals.org.au: live document
+        unavailable: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException:
+        PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException:
+        unable to find valid certification path to req'
+      Set-Cookie:
+      - JSESSIONID=AD9413CEBB2E91ED956FEAE28467A2C5; Path=/; HttpOnly
+      X-App-Server:
+      - wwwb-app54
+      X-Ts:
+      - "----"
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 10:41:17 GMT
 recorded_with: VCR 4.0.0

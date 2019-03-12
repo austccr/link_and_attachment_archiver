@@ -31,12 +31,20 @@ RSpec.describe LinkArchiver do
     end
 
     context 'if there are errors' do
-      pending 'records them' do
+      it 'records them' do
+        archiver.links = [
+          { url: 'https://minerals.org.au' }
+        ]
+
+        VCR.use_cassette('internet_archive', record: :once) do
+          archiver.archive_links
+        end
+
         expect(archiver.links).to eq [
           {
-            url: 'https://feministinternet.org/',
-            syndication: '',
-            errors: 'error'
+            url: 'https://minerals.org.au',
+            syndication: nil,
+            errors: '502: LiveDocumentNotAvailableException: https://minerals.org.au: live document unavailable: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to req'
           }
         ]
       end
