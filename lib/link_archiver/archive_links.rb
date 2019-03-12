@@ -19,7 +19,8 @@ class LinkArchiver
     )
 
     request.on_complete do |response|
-      if response.success?
+      # When archive.org returns 301, it has still archived the page
+      if response.success? || response.code.eql?(301)
         response_details[:syndication] = [
           "https://web.archive.org",
           response.headers['content-location']
