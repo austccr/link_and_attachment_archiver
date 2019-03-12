@@ -28,7 +28,7 @@ def archive_links_from_morph_results(current_offset, total_links, total_records)
         archived_at: Time.now.utc.to_s
       )
 
-      ScraperWiki.save_sqlite([:url], link)
+      ScraperWiki.save_sqlite([:url, :source_url], link)
 
       total_links += 1
 
