@@ -16,7 +16,7 @@ RSpec.describe LinkArchiver do
           source_url: 'http://minerals.org.au/news/peru-australia-free-trade-agreement-will-deliver-investment-and-jobs-australia'
         )
 
-        VCR.use_cassette('internet_archive', record: :new_episodes) do
+        VCR.use_cassette('internet_archive', record: :once) do
           archiver.parse_html_and_archive_links(html)
         end
 

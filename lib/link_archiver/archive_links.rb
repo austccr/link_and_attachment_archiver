@@ -28,7 +28,7 @@ class LinkArchiver
         response_details[:errors] = [
           response.code.to_s + ': ',
           response.status_message,
-          response.headers.dig('X-Archive-Wayback-Runtime-Error')
+          response.headers.dig('x-archive-wayback-runtime-error') || response.headers.dig('X-Archive-Wayback-Runtime-Error')
         ].join
       end
     end
