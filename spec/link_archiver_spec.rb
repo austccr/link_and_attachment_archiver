@@ -51,5 +51,29 @@ RSpec.describe LinkArchiver do
         ]
       end
     end
+
+    context 'when there are multiple links' do
+      it 'archives them all' do
+        archiver.links = [
+          { url: 'https://minerals.org.au' },
+          { url: 'https://feministinternet.org/' }
+        ]
+
+        archiver.archive_links
+
+        expect(archiver.links).to eq [
+          {
+            url: 'https://minerals.org.au',
+            syndication: nil,
+            errors: '502: LiveDocumentNotAvailableException: https://minerals.org.au: live document unavailable: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to req'
+          },
+          {
+            url: 'https://feministinternet.org/',
+            syndication: 'https://web.archive.org/web/20190312102044/https://feministinternet.org/',
+            errors: nil
+          }
+        ]
+      end
+    end
   end
 end
