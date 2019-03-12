@@ -15,7 +15,7 @@ RSpec.describe LinkArchiver do
 
   describe '#parse_html' do
     context 'when there are no links' do
-      it 'takes a string of HTML and extracts the links' do
+      it 'it finds none' do
         html = '<p>here is some html</p>'
 
         archiver.parse_html(html)
