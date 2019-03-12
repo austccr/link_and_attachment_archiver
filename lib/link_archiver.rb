@@ -4,7 +4,7 @@ class LinkArchiver
   attr_reader :links
   attr_accessor :source_url
 
-  def initialize
+  def initialize(source_url:)
     @links = []
     @source_url = nil
   end

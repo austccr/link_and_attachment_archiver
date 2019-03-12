@@ -1,16 +1,16 @@
 require_relative '../lib/link_archiver'
 
 RSpec.describe LinkArchiver do
-  let(:archiver) { LinkArchiver.new }
+  let(:archiver) { LinkArchiver.new(source_url: '') }
 
-  it 'has an attribute source_url' do
-    archiver.source_url = 'http://minerals.org.au'
-
-    expect(archiver.source_url).to eq 'http://minerals.org.au'
+  it 'must have a source url' do
+    expect { LinkArchiver.new }.to(
+      raise_error(ArgumentError, 'missing keyword: source_url')
+    )
   end
 
   it 'has an attribute links' do
-    expect(LinkArchiver.new.links).to eql []
+    expect(archiver.links).to eql []
   end
 
   describe '#parse_html' do
