@@ -11,6 +11,10 @@ gem 'pry'
 gem 'typhoeus'
 gem 'nokogiri'
 
+group :development do
+  gem 'dotenv'
+end
+
 group :test do
   gem 'rspec'
   gem 'vcr'
