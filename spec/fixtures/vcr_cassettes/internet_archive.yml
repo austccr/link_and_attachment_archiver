@@ -722,4 +722,382 @@ http_interactions:
       string: ''
     http_version: 
   recorded_at: Tue, 12 Mar 2019 11:37:25 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/http://www.minerals.org.au/file_upload/files/publications/UQE003_CCS_report_HR.PDF
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 301
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 11:48:18 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '3127'
+      Content-Location:
+      - "/web/20190312114818/http://www.minerals.org.au/file_upload/files/publications/UQE003_CCS_report_HR.PDF"
+      Set-Cookie:
+      - JSESSIONID=5289BF7D95136AD2E420C6C6E52D0FF2; Path=/; HttpOnly
+      X-Archive-Guessed-Charset:
+      - ISO-8859-1
+      X-Archive-Orig-Server:
+      - nginx
+      X-Archive-Orig-Connection:
+      - close
+      X-Archive-Orig-Content-Type:
+      - text/html
+      X-Archive-Orig-Location:
+      - http://minerals.org.au/file_upload/files/publications/UQE003_CCS_report_HR.PDF
+      X-Archive-Orig-X-Powered-By:
+      - PleskLin
+      X-Archive-Orig-Content-Length:
+      - '178'
+      X-Archive-Orig-Date:
+      - Tue, 12 Mar 2019 11:48:18 GMT
+      Location:
+      - "/save/http://minerals.org.au/file_upload/files/publications/UQE003_CCS_report_HR.PDF"
+      X-App-Server:
+      - wwwb-app6
+      X-Ts:
+      - "----"
+      X-Cache-Key:
+      - httpsweb.archive.org/save/http://www.minerals.org.au/file_upload/files/publications/UQE003_CCS_report_HR.PDFME
+      X-Page-Cache:
+      - MISS
+      X-Location:
+      - save-get
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 11:48:18 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/http://minerals.org.au/UQE003_CCS_report_HR.PDF
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 404
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 11:48:20 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '32757'
+      Content-Location:
+      - "/web/20190312114819/http://minerals.org.au/UQE003_CCS_report_HR.PDF"
+      Set-Cookie:
+      - JSESSIONID=855149BC47295F63A5F6D7735BE6A3FD; Path=/; HttpOnly
+      X-Archive-Guessed-Charset:
+      - utf-8
+      X-Archive-Orig-X-Generator:
+      - Drupal 7 (http://drupal.org)
+      X-Archive-Orig-X-Frame-Options:
+      - SameOrigin
+      X-Archive-Orig-Server:
+      - nginx
+      X-Archive-Orig-Connection:
+      - close
+      X-Archive-Orig-X-Powered-By:
+      - PHP/5.6.40
+      X-Archive-Orig-Ms-Author-Via:
+      - DAV
+      X-Archive-Orig-Date:
+      - Tue, 12 Mar 2019 11:48:19 GMT
+      X-Archive-Orig-Link:
+      - <http://minerals.org.au/>; rel="canonical",<http://minerals.org.au/>; rel="shortlink"
+      X-Archive-Orig-Content-Type:
+      - text/html; charset=utf-8
+      X-Archive-Orig-Content-Language:
+      - en
+      X-Archive-Orig-Cache-Control:
+      - no-cache, must-revalidate
+      X-Archive-Orig-Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      X-Archive-Orig-X-Content-Type-Options:
+      - nosniff
+      X-Archive-Orig-Transfer-Encoding:
+      - chunked
+      X-App-Server:
+      - wwwb-app15
+      X-Ts:
+      - "----"
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 11:48:20 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/http://minerals.org.au/WP1_Energy_and_Climate.pdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 404
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 11:48:21 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '32761'
+      Content-Location:
+      - "/web/20190312114820/http://minerals.org.au/WP1_Energy_and_Climate.pdf"
+      Set-Cookie:
+      - JSESSIONID=2C3862A7BE3A29A3DA971FD92DFB8BDE; Path=/; HttpOnly
+      X-Archive-Guessed-Charset:
+      - utf-8
+      X-Archive-Orig-X-Generator:
+      - Drupal 7 (http://drupal.org)
+      X-Archive-Orig-X-Frame-Options:
+      - SameOrigin
+      X-Archive-Orig-Server:
+      - nginx
+      X-Archive-Orig-Connection:
+      - close
+      X-Archive-Orig-X-Powered-By:
+      - PHP/5.6.40
+      X-Archive-Orig-Ms-Author-Via:
+      - DAV
+      X-Archive-Orig-Date:
+      - Tue, 12 Mar 2019 11:48:21 GMT
+      X-Archive-Orig-Link:
+      - <http://minerals.org.au/>; rel="canonical",<http://minerals.org.au/>; rel="shortlink"
+      X-Archive-Orig-Content-Type:
+      - text/html; charset=utf-8
+      X-Archive-Orig-Content-Language:
+      - en
+      X-Archive-Orig-Cache-Control:
+      - no-cache, must-revalidate
+      X-Archive-Orig-Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      X-Archive-Orig-X-Content-Type-Options:
+      - nosniff
+      X-Archive-Orig-Transfer-Encoding:
+      - chunked
+      X-App-Server:
+      - wwwb-app4
+      X-Ts:
+      - "----"
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 11:48:21 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/http://www.minerals.org.au/file_upload/files/publications/WP1_Energy_and_Climate.pdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 301
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 11:48:22 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '3133'
+      Content-Location:
+      - "/web/20190312114821/http://www.minerals.org.au/file_upload/files/publications/WP1_Energy_and_Climate.pdf"
+      Set-Cookie:
+      - JSESSIONID=3FB29B933EE19971F2597D004BF106EE; Path=/; HttpOnly
+      X-Archive-Guessed-Charset:
+      - ISO-8859-1
+      X-Archive-Orig-Server:
+      - nginx
+      X-Archive-Orig-Connection:
+      - close
+      X-Archive-Orig-Content-Type:
+      - text/html
+      X-Archive-Orig-Location:
+      - http://minerals.org.au/file_upload/files/publications/WP1_Energy_and_Climate.pdf
+      X-Archive-Orig-X-Powered-By:
+      - PleskLin
+      X-Archive-Orig-Content-Length:
+      - '178'
+      X-Archive-Orig-Date:
+      - Tue, 12 Mar 2019 11:48:22 GMT
+      Location:
+      - "/save/http://minerals.org.au/file_upload/files/publications/WP1_Energy_and_Climate.pdf"
+      X-App-Server:
+      - wwwb-app52
+      X-Ts:
+      - "----"
+      X-Cache-Key:
+      - httpsweb.archive.org/save/http://www.minerals.org.au/file_upload/files/publications/WP1_Energy_and_Climate.pdfME
+      X-Page-Cache:
+      - MISS
+      X-Location:
+      - save-get
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 11:48:22 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/http://www.minerals.org.au/file_upload/files/publications/WP2_Financial_Incentives.pdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 301
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 11:48:22 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '3135'
+      Content-Location:
+      - "/web/20190312114822/http://www.minerals.org.au/file_upload/files/publications/WP2_Financial_Incentives.pdf"
+      Set-Cookie:
+      - JSESSIONID=38322A801698F372FDA60998F3944FAF; Path=/; HttpOnly
+      X-Archive-Guessed-Charset:
+      - ISO-8859-1
+      X-Archive-Orig-Server:
+      - nginx
+      X-Archive-Orig-Connection:
+      - close
+      X-Archive-Orig-Content-Type:
+      - text/html
+      X-Archive-Orig-Location:
+      - http://minerals.org.au/file_upload/files/publications/WP2_Financial_Incentives.pdf
+      X-Archive-Orig-X-Powered-By:
+      - PleskLin
+      X-Archive-Orig-Content-Length:
+      - '178'
+      X-Archive-Orig-Date:
+      - Tue, 12 Mar 2019 11:48:22 GMT
+      Location:
+      - "/save/http://minerals.org.au/file_upload/files/publications/WP2_Financial_Incentives.pdf"
+      X-App-Server:
+      - wwwb-app6
+      X-Ts:
+      - "----"
+      X-Cache-Key:
+      - httpsweb.archive.org/save/http://www.minerals.org.au/file_upload/files/publications/WP2_Financial_Incentives.pdfME
+      X-Page-Cache:
+      - MISS
+      X-Location:
+      - save-get
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 11:48:22 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/http://www.minerals.org.au/file_upload/files/publications/WP3_CCS_Roadmaps_and_Projects.pdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 301
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 11:48:24 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '3145'
+      Content-Location:
+      - "/web/20190312114823/http://www.minerals.org.au/file_upload/files/publications/WP3_CCS_Roadmaps_and_Projects.pdf"
+      Set-Cookie:
+      - JSESSIONID=B045B4373C681BAC7617D756D921596D; Path=/; HttpOnly
+      X-Archive-Guessed-Charset:
+      - ISO-8859-1
+      X-Archive-Orig-Server:
+      - nginx
+      X-Archive-Orig-Connection:
+      - close
+      X-Archive-Orig-Content-Type:
+      - text/html
+      X-Archive-Orig-Location:
+      - http://minerals.org.au/file_upload/files/publications/WP3_CCS_Roadmaps_and_Projects.pdf
+      X-Archive-Orig-X-Powered-By:
+      - PleskLin
+      X-Archive-Orig-Content-Length:
+      - '178'
+      X-Archive-Orig-Date:
+      - Tue, 12 Mar 2019 11:48:23 GMT
+      Location:
+      - "/save/http://minerals.org.au/file_upload/files/publications/WP3_CCS_Roadmaps_and_Projects.pdf"
+      X-App-Server:
+      - wwwb-app1
+      X-Ts:
+      - "----"
+      X-Cache-Key:
+      - httpsweb.archive.org/save/http://www.minerals.org.au/file_upload/files/publications/WP3_CCS_Roadmaps_and_Projects.pdfME
+      X-Page-Cache:
+      - MISS
+      X-Location:
+      - save-get
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 11:48:24 GMT
 recorded_with: VCR 4.0.0
