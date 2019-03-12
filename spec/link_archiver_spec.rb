@@ -82,5 +82,18 @@ RSpec.describe LinkArchiver do
         ]
       end
     end
+
+    context 'duplicate_example.html' do
+      it 'extracts unique URLs' do
+        archiver.source_url = 'https://minerals.org.au/news/peru-australia-free-trade-agreement-will-deliver-investment-and-jobs-australia'
+        html = File.read('./spec/fixtures/duplicate_example.html')
+
+        archiver.parse_html(html)
+
+        expect(archiver.links).to eql [
+          { url: 'https://minerals.org.au/sites/default/files/190226%20Peru-Australia%20Free%20Trade%20Agreement%20will%20deliver%20investment%20and%20jobs%20for%20Australia.pdf' }
+        ]
+      end
+    end
   end
 end
