@@ -8,6 +8,12 @@ RSpec.describe LinkArchiver do
   end
 
   describe '#archive_links' do
+    around do |example|
+      VCR.use_cassette('internet_archive', record: :once) do
+        example.run
+      end
+    end
+
     let(:archiver) do
       LinkArchiver.new(source_url: 'https://foo.org/bar')
     end
@@ -17,9 +23,7 @@ RSpec.describe LinkArchiver do
         { url: 'https://feministinternet.org/' }
       ]
 
-      VCR.use_cassette('internet_archive', record: :once) do
-        archiver.archive_links
-      end
+      archiver.archive_links
 
       expect(archiver.links).to eq [
         {
@@ -36,9 +40,7 @@ RSpec.describe LinkArchiver do
           { url: 'https://minerals.org.au' }
         ]
 
-        VCR.use_cassette('internet_archive', record: :once) do
-          archiver.archive_links
-        end
+        archiver.archive_links
 
         expect(archiver.links).to eq [
           {
