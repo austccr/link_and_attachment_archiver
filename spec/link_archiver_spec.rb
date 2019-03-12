@@ -44,6 +44,18 @@ RSpec.describe LinkArchiver do
       end
     end
 
+    context 'when there are duplicate links' do
+      it 'takes a string of HTML and extracts the links' do
+        html = '<p>here is some html, with <a href="https://feministinternet.org/">a link</a></p><div><a href="https://feministinternet.org/">a duplicate link</a></div>'
+
+        archiver.parse_html(html)
+
+        expect(archiver.links).to eql [
+          { url: 'https://feministinternet.org/' }
+        ]
+      end
+    end
+
     context 'when there are two links' do
       it 'takes a string of HTML and extracts the links' do
         html = '<p>here is some html, with <a href="https://feministinternet.org/">a link</a></p><div><a href="https://www.forensic-architecture.org/">another link</a></div>'

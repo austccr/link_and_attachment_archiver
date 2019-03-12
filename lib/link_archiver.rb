@@ -22,6 +22,6 @@ class LinkArchiver
       extracted_links << { url: url.to_s }
     end
 
-    self.links += extracted_links
+    self.links += extracted_links.uniq
   end
 end
