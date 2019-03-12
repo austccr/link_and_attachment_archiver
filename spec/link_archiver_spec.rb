@@ -69,6 +69,19 @@ RSpec.describe LinkArchiver do
       end
     end
 
+    context 'duplicate_example.html' do
+      it 'extracts unique URLs' do
+        archiver.source_url = 'https://minerals.org.au/news/peru-australia-free-trade-agreement-will-deliver-investment-and-jobs-australia'
+        html = File.read('./spec/fixtures/duplicate_example.html')
+
+        archiver.parse_html(html)
+
+        expect(archiver.links).to eql [
+          { url: 'https://minerals.org.au/sites/default/files/190226%20Peru-Australia%20Free%20Trade%20Agreement%20will%20deliver%20investment%20and%20jobs%20for%20Australia.pdf' }
+        ]
+      end
+    end
+
     context 'example.html' do
       it 'extracts URLs' do
         archiver.source_url = 'http://minerals.org.au/news/peru-australia-free-trade-agreement-will-deliver-investment-and-jobs-australia'
@@ -83,15 +96,16 @@ RSpec.describe LinkArchiver do
       end
     end
 
-    context 'duplicate_example.html' do
-      it 'extracts unique URLs' do
-        archiver.source_url = 'https://minerals.org.au/news/peru-australia-free-trade-agreement-will-deliver-investment-and-jobs-australia'
-        html = File.read('./spec/fixtures/duplicate_example.html')
+    context 'example_01.html' do
+      it 'extracts URLs' do
+        archiver.source_url = 'http://minerals.org.au/news/mca-calls-parliament-support-regional-communities-and-jobs'
+        html = File.read('./spec/fixtures/example_01.html')
 
         archiver.parse_html(html)
 
         expect(archiver.links).to eql [
-          { url: 'https://minerals.org.au/sites/default/files/190226%20Peru-Australia%20Free%20Trade%20Agreement%20will%20deliver%20investment%20and%20jobs%20for%20Australia.pdf' }
+          { url: 'http://minerals.org.au/files/190220-mca-calls-parliament-support-regional-communities-and-jobspdf' },
+          { url: 'https://minerals.org.au/sites/default/files/190220%20MCA%20calls%20on%20Parliament%20to%20support%20regional%20communities%20and%20jobs.pdf' }
         ]
       end
     end
