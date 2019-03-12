@@ -1,0 +1,577 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://web.archive.org/save/https://feministinternet.org/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - web.archive.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 10:03:22 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Content-Location:
+      - "/web/20190312100321/https://feministinternet.org/"
+      Set-Cookie:
+      - JSESSIONID=5F4F3ED81155C088675FCE2F1F89DB7D; Path=/; HttpOnly
+      X-Archive-Orig-X-Drupal-Cache:
+      - HIT
+      X-Archive-Orig-Vary:
+      - Cookie,Accept-Encoding
+      X-Archive-Guessed-Charset:
+      - utf-8
+      X-Archive-Orig-X-Generator:
+      - Drupal 7 (http://drupal.org)
+      X-Archive-Orig-X-Frame-Options:
+      - SAMEORIGIN
+      X-Archive-Orig-Server:
+      - Apache/2.4.10
+      X-Archive-Orig-Connection:
+      - close
+      X-Archive-Orig-Last-Modified:
+      - Tue, 12 Mar 2019 09:14:49 GMT
+      X-Archive-Orig-Date:
+      - Tue, 12 Mar 2019 10:03:22 GMT
+      X-Archive-Orig-Etag:
+      - '"1552382089-1"'
+      X-Archive-Orig-Content-Type:
+      - text/html; charset=utf-8
+      X-Archive-Orig-Content-Language:
+      - en
+      X-Archive-Orig-Cache-Control:
+      - public, max-age=60
+      X-Archive-Orig-Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      X-App-Server:
+      - wwwb-app54
+      X-Ts:
+      - "----"
+      X-Cache-Key:
+      - httpsweb.archive.org/save/https://feministinternet.org/ME
+      X-Page-Cache:
+      - MISS
+      X-Location:
+      - save-get
+    body:
+      encoding: ASCII-8BIT
+      string: "\n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('html') -->\n<!-- FILE NAME
+        SUGGESTIONS:\n   * html--front.tpl.php\n   * html--home.tpl.php\n   x html.tpl.php\n-->\n<!--
+        BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/html.tpl.php' -->\n<!DOCTYPE
+        html>\n<!-- Sorry no IE7 support! -->\n<!-- @see /save/http://foundation.zurb.com/docs/index.html#basicHTMLMarkup
+        -->\n\n<!--[if IE 8]><html class=\"no-js lt-ie9\" lang=\"en\" dir=\"ltr\">
+        <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\" dir=\"ltr\">
+        <!--<![endif]-->\n<head>\n\n\n<script type=\"text/javascript\" src=\"/static/js/analytics.js\"></script>\n<script
+        type=\"text/javascript\">archive_analytics.values.server_name=\"wwwb-app54.us.archive.org\";archive_analytics.values.server_ms=0;</script>\n<link
+        type=\"text/css\" rel=\"stylesheet\" href=\"/static/css/banner-styles.css\"/>\n\n\n
+        \ <meta charset=\"utf-8\" />\n<meta http-equiv=\"ImageToolbar\" content=\"false\"
+        />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"
+        />\n<link rel=\"shortcut icon\" href=\"/save/_embed/https://feministinternet.org/sites/all/themes/fpi/favicon.ico\"
+        />\n<meta name=\"Generator\" content=\"Drupal 7 (http://drupal.org)\" />\n
+        \ <title>Feminist Principles of the Internet | </title>\n  <link rel=\"stylesheet\"
+        href=\"/save/_embed/https://feministinternet.org/sites/default/files/css/css_kShW4RPmRstZ3SpIC-ZvVGNFVAi0WEMuCnI0ZkYIaFw.css\"
+        />\n<link rel=\"stylesheet\" href=\"/save/_embed/https://feministinternet.org/sites/default/files/css/css_xHz9zVfHuu_caMf9d7KBVfBMeHnQwpcp0CqYldp921A.css\"
+        />\n<link rel=\"stylesheet\" href=\"/save/_embed/https://feministinternet.org/sites/default/files/css/css_lFr4HUhh7j3vst0sUTP_0GoTTMj8SoK6Rtjdo99tPrM.css\"
+        />\n<link rel=\"stylesheet\" href=\"/save/_embed/https://feministinternet.org/sites/default/files/css/css_bSnX8ZHrzQIrYrGvjiuhIMrCNOhpwF7CYnnfXHf4tts.css\"
+        />\n  <script src=\"/save/_embed/https://feministinternet.org/sites/default/files/js/js_Kd4BsnIT6T8vj1yoTIfotvk_bIOeY4Ndbdvl8ytcvjs.js\"></script>\n<script
+        src=\"/save/_embed/https://feministinternet.org/sites/default/files/js/js_7uExgaW2ya9oBHetRjD-TqV-bKtqs-tvhVxpPns3C2s.js\"></script>\n<script
+        src=\"/save/_embed/https://feministinternet.org/sites/default/files/js/js_idOWcUCk1Z0IvTE0BTg9cK8YDTU0e3_cIEnTium2iNA.js\"></script>\n<script>jQuery.extend(Drupal.settings,
+        {\"basePath\":\"\\/\",\"pathPrefix\":\"en\\/\",\"ajaxPageState\":{\"theme\":\"fpi\",\"theme_token\":\"c20yw_4GpebNKdMMRrMxnj25FYQV_OR70l6ZeNZgBP4\",\"js\":{\"sites\\/all\\/modules\\/contrib\\/flexslider\\/assets\\/js\\/flexslider.load.js\":1,\"sites\\/all\\/modules\\/contrib\\/jquery_update\\/replace\\/jquery\\/1.10\\/jquery.js\":1,\"misc\\/jquery.once.js\":1,\"misc\\/drupal.js\":1,\"sites\\/all\\/modules\\/contrib\\/video\\/js\\/video.js\":1,\"sites\\/all\\/libraries\\/flexslider\\/jquery.flexslider-min.js\":1,\"sites\\/all\\/modules\\/contrib\\/field_group\\/field_group.js\":1,\"sites\\/all\\/themes\\/zurb_foundation\\/js\\/behavior\\/reveal.js\":1,\"sites\\/all\\/themes\\/zurb_foundation\\/js\\/vendor\\/modernizr.js\":1,\"sites\\/all\\/themes\\/fpi\\/js\\/foundation.min.js\":1,\"sites\\/all\\/themes\\/fpi\\/js\\/libs.min.js\":1,\"sites\\/all\\/themes\\/fpi\\/js\\/app.min.js\":1},\"css\":{\"modules\\/system\\/system.base.css\":1,\"modules\\/system\\/system.messages.css\":1,\"modules\\/system\\/system.theme.css\":1,\"modules\\/aggregator\\/aggregator.css\":1,\"sites\\/all\\/modules\\/contrib\\/date\\/date_api\\/date.css\":1,\"sites\\/all\\/modules\\/contrib\\/date\\/date_popup\\/themes\\/datepicker.1.7.css\":1,\"modules\\/field\\/theme\\/field.css\":1,\"modules\\/node\\/node.css\":1,\"modules\\/search\\/search.css\":1,\"modules\\/user\\/user.css\":1,\"sites\\/all\\/modules\\/contrib\\/views\\/css\\/views.css\":1,\"sites\\/all\\/modules\\/contrib\\/media\\/modules\\/media_wysiwyg\\/css\\/media_wysiwyg.base.css\":1,\"sites\\/all\\/modules\\/contrib\\/ctools\\/css\\/ctools.css\":1,\"sites\\/all\\/modules\\/contrib\\/video\\/css\\/video.css\":1,\"sites\\/all\\/modules\\/contrib\\/wysiwyg_linebreaks\\/wysiwyg_linebreaks.css\":1,\"sites\\/all\\/modules\\/contrib\\/flexslider\\/assets\\/css\\/flexslider_img.css\":1,\"sites\\/all\\/libraries\\/flexslider\\/flexslider.css\":1,\"sites\\/all\\/themes\\/fpi\\/css\\/normalize.css\":1,\"sites\\/all\\/themes\\/fpi\\/css\\/foundation.min.css\":1,\"sites\\/all\\/themes\\/fpi\\/css\\/fpi.css\":1}},\"field_group\":{\"html-element\":\"full\"},\"flexslider\":{\"optionsets\":{\"default\":{\"namespace\":\"flex-\",\"selector\":\".slides
+        \\u003E li\",\"easing\":\"swing\",\"direction\":\"horizontal\",\"reverse\":false,\"smoothHeight\":false,\"startAt\":1,\"animationSpeed\":600,\"initDelay\":0,\"useCSS\":true,\"touch\":true,\"video\":false,\"keyboard\":true,\"multipleKeyboard\":false,\"mousewheel\":0,\"controlsContainer\":\".flex-control-nav-container\",\"sync\":\"\",\"asNavFor\":\"\",\"itemWidth\":0,\"itemMargin\":0,\"minItems\":0,\"maxItems\":0,\"move\":0,\"animation\":\"fade\",\"slideshow\":false,\"slideshowSpeed\":\"7000\",\"directionNav\":true,\"controlNav\":\"thumbnails\",\"prevText\":\"Previous\",\"nextText\":\"Next\",\"pausePlay\":false,\"pauseText\":\"Pause\",\"playText\":\"Play\",\"randomize\":false,\"thumbCaptions\":true,\"thumbCaptionsBoth\":false,\"animationLoop\":true,\"pauseOnAction\":true,\"pauseOnHover\":false,\"manualControls\":\"\"}},\"instances\":{\"flexslider-1\":\"default\"}}});</script>\n
+        \ <!--[if lt IE 9]>\n\t\t<script src=\"/save/http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n\t<![endif]-->\n</head>\n<body
+        class=\"html front not-logged-in no-sidebars page-home i18n-en lang-en views-page\"
+        >\n\n\n\n\n  \n    \n<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']=\"wwwb-app54.us.archive.org\";};
+        </script>\n\n<!-- Start of Record Banner output -->\n<wb_div id=\"__wb_record_overlay_div\"
+        class=\"__wb_overlay\">\n</wb_div>\n\n<wb_div class=\"__wb_record_content\"
+        id=\"__wb_record_content_loader\">\n<wb_h1 id=\"_wb_load_msg\">Saving page
+        now...</wb_h1>\n<wb_p id=\"_wb_curr_url\">https://feministinternet.org/</wb_p>\n<wb_p>As
+        it appears live March 12, 2019 10:03:21 AM UTC</wb_p>\n\n\n\n<wb_div id=\"__wb_spinningSquaresG\">\n<wb_div
+        id=\"__wb_spinningSquaresG_1\" class=\"__wb_spinningSquaresG\">\n</wb_div>\n<wb_div
+        id=\"__wb_spinningSquaresG_2\" class=\"__wb_spinningSquaresG\">\n</wb_div>\n<wb_div
+        id=\"__wb_spinningSquaresG_3\" class=\"__wb_spinningSquaresG\">\n</wb_div>\n<wb_div
+        id=\"__wb_spinningSquaresG_4\" class=\"__wb_spinningSquaresG\">\n</wb_div>\n<wb_div
+        id=\"__wb_spinningSquaresG_5\" class=\"__wb_spinningSquaresG\">\n</wb_div>\n<wb_div
+        id=\"__wb_spinningSquaresG_6\" class=\"__wb_spinningSquaresG\">\n</wb_div>\n<wb_div
+        id=\"__wb_spinningSquaresG_7\" class=\"__wb_spinningSquaresG\">\n</wb_div>\n<wb_div
+        id=\"__wb_spinningSquaresG_8\" class=\"__wb_spinningSquaresG\">\n</wb_div>\n</wb_div>\n\n<img
+        id=\"_wb_logo\" src=\"/static/images/logo_WM.png\"/>\n</wb_div>\n\n<script
+        type=\"text/javascript\" src=\"/static/js/disclaim-element.js\" ></script>\n<script
+        type=\"text/javascript\">\n  function doRedir()\n  {   \n    var redirUrl
+        = \"/web/20190312100321/https://feministinternet.org/\";\n    var textElem
+        = document.getElementById(\"_wb_load_msg\");\n    if (textElem) {\n      textElem.innerHTML
+        = \"Loading Saved Page...\";\n    }\n    window.location.replace(redirUrl);
+        \ \n  }\n  \n  function redirToCapture()\n  {\n    window.setTimeout(doRedir,
+        1000);\n  }\n\n  \n  if ( window != window.top ) {\n    \n    var wmOverlay
+        = document.getElementById(\"__wb_record_overlay\");\n    \n    if (wmOverlay)
+        {\n      wmOverlay.style.display = \"none\";\n    }\n    \n  } else {\n    \n
+        \   if (window.addEventListener) {\n      window.addEventListener('load',
+        redirToCapture, false);\n    } else if (window.attachEvent) {\n      window.attachEvent('onload',
+        redirToCapture);\n    }\n    \n    // Just in case, redir after 90 secs\n
+        \   window.setTimeout(doRedir, 90000);\n  }\n</script>\n\n<!-- End of Record
+        Banner Output output -->\n\n  \n\n\n\n\n  <div class=\"skip-link\">\n    <a
+        href=\"#main-content\" class=\"element-invisible element-focusable\">Skip
+        to main content</a>\n  </div>\n    \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('page')
+        -->\n<!-- FILE NAME SUGGESTIONS:\n   * page--front.tpl.php\n   * page--home.tpl.php\n
+        \  x page.tpl.php\n-->\n<!-- BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/page.tpl.php'
+        -->\n<!--.page -->\n<div role=\"document\" class=\"page\">\n\n  <!--.l-header
+        -->\n  <header role=\"banner\" class=\"l-header\">\n\n          <!--.top-bar
+        -->\n              <div class=\"sticky show-for-small\">\n            <nav
+        class=\"top-bar\" data-topbar  data-options=\"is_hover:false; scrolltop:false\">\n
+        \       <ul class=\"title-area\">\n          <li class=\"name\"><h1><a href=\"/save/https://feministinternet.org/en\"
+        rel=\"home\" title=\"Feminist Principles of the Internet Home\" class=\"active\">Feminist
+        Principles of the Internet</a></h1></li>\n          <li class=\"toggle-topbar
+        menu-icon\">\n            <a href=\"#\"><span></span></a></li>\n        </ul>\n
+        \       <section class=\"top-bar-section\">\n                      <ul id=\"main-menu\"
+        class=\"main-nav left\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/about\">About</a></li><li
+        class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/page/contribute\">Contribute</a></li><li
+        class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principles\">Principles</a></li><li
+        class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/events\">Events</a></li><li
+        class=\"expanded has-dropdown\"><a href=\"/save/https://feministinternet.org/en/principles\">Principles</a><ul
+        class=\"dropdown\"><li class=\"first expanded has-dropdown\"><a href=\"/save/https://feministinternet.org/en/access\">Access</a><ul
+        class=\"dropdown\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/access\">1.
+        Access</a></li><li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/information\">2.
+        Information</a></li><li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/usage\">3.
+        Usage</a></li></ul></li><li class=\"expanded has-dropdown\"><a href=\"/save/https://feministinternet.org/en/movements\">Movements</a><ul
+        class=\"dropdown\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/governance\">6.
+        Governance</a></li><li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/resistance\">4.
+        Resistance</a></li><li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/movement-building\">5.
+        Movement Building</a></li></ul></li><li class=\"expanded has-dropdown\"><a
+        href=\"/save/https://feministinternet.org/en/economy\">Economy</a><ul class=\"dropdown\"><li
+        class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/economy\">7.
+        Economy</a></li><li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/open-source\">8.
+        Open source</a></li></ul></li><li class=\"expanded has-dropdown\"><a href=\"/save/https://feministinternet.org/en/expression\">Expression</a><ul
+        class=\"dropdown\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/amplify\">9.
+        Amplify</a></li><li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/expression\">10.
+        Expression</a></li><li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/consent\">11.
+        Consent</a></li><li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/pornography\">12.
+        Pornography</a></li></ul></li><li class=\"expanded has-dropdown\"><a href=\"/save/https://feministinternet.org/en/embodiment\">Embodiment</a><ul
+        class=\"dropdown\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/privacy-data\">13.
+        Privacy &amp; Data</a></li><li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/memory\">14.
+        Memory</a></li><li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/anonymity\">15.
+        Anonymity</a></li><li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/children\">16.
+        Children</a></li><li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/violence\">17.
+        Violence</a></li></ul></li><li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/governance\">Governance</a></li><li
+        class=\"last leaf\" title=\"The feminist principles of the internet - podcast
+        from &quot;Wish I got that on tape.&quot;\" id=\"https://anchor.fm/kira-allmann/episodes/the-feminist-principles-of-the-internet-e2ivv2/a-a6elvm\"><a
+        href=\"/save/https://feministinternet.org/en/https%3A//anchor.fm/kira-allmann/episodes/the-feminist-principles-of-the-internet-e2ivv2/a-a6elvm\"
+        title=\"The feminist principles of the internet - podcast from &quot;Wish
+        I got that on tape.&quot;\" id=\"https://anchor.fm/kira-allmann/episodes/the-feminist-principles-of-the-internet-e2ivv2/a-a6elvm\">The
+        feminist principles of the internet - podcast from &quot;Wish I got that on
+        tape.&quot;</a></li></ul></li><li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/download\">Download</a></li></ul>
+        \                               <ul id=\"secondary-menu\" class=\"secondary
+        link-list right\"><li class=\"first leaf\" title=\"\"><a href=\"/save/https://feministinternet.org/en/user/login\"
+        title=\"\">Login</a></li><li class=\"last leaf\" title=\"\"><a href=\"/save/https://feministinternet.org/en/user/register\"
+        title=\"\">Register</a></li></ul>                  </section>\n      </nav>\n
+        \             </div>\n            <!--/.top-bar -->\n    \n    <!-- Title,
+        slogan and menu -->\n    <div class=\"row branding-header\">\n\n          <section
+        class=\"columns l-branding  hide-for-small\">\n\n        <a href=\"/save/https://feministinternet.org/en\"
+        class=\"logo active\" rel=\"home\" title=\"Feminist Principles of the Internet
+        Home\"><img class=\"logo\" src=\"/save/_embed/https://feministinternet.org/sites/default/files/logo_full.jpg\"
+        alt=\"Feminist Principles of the Internet logo\" title=\"Feminist Principles
+        of the Internet Home\" /></a>\n                              <h1 id=\"site-name\"
+        class=\"element-invisible\">\n              <a href=\"/save/https://feministinternet.org/en\"
+        title=\"Home\" rel=\"home\"><span>Feminist Principles of the Internet</span></a>\n
+        \           </h1>\n                  \n        \n      </section>\n        <!--
+        End title, slogan and menu -->\n\n          <!--.l-header-region -->\n      <section
+        class=\"columns l-header-region\">\n          \n\n<!-- THEME DEBUG -->\n<!--
+        CALL: theme('region') -->\n<!-- FILE NAME SUGGESTIONS:\n   * region--header.tpl.php\n
+        \  x region.tpl.php\n-->\n<!-- BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/region.tpl.php'
+        -->\n  \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('block') -->\n<!-- FILE
+        NAME SUGGESTIONS:\n   * block--system--user-menu.tpl.php\n   * block--system.tpl.php\n
+        \  * block--header.tpl.php\n   x block.tpl.php\n-->\n<!-- BEGIN OUTPUT from
+        'sites/all/themes/fpi/templates/system/block.tpl.php' -->\n<section class=\"block
+        block-system block-menu block-system-user-menu header\">\n  \n        <h2
+        class=\"block-title element-invisible\">User menu</h2>\n    \n  <div  class=\"block-content\">
+        \ <ul class=\"menu\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/user/login\"
+        title=\"\">Login</a></li>\n<li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/user/register\"
+        title=\"\">Register</a></li>\n</ul>  </div>\n  </section>\n<!-- END OUTPUT
+        from 'sites/all/themes/fpi/templates/system/block.tpl.php' -->\n\n\n\n<!--
+        THEME DEBUG -->\n<!-- CALL: theme('block') -->\n<!-- FILE NAME SUGGESTIONS:\n
+        \  * block--system--main-menu.tpl.php\n   * block--system.tpl.php\n   * block--header.tpl.php\n
+        \  x block.tpl.php\n-->\n<!-- BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/block.tpl.php'
+        -->\n<section class=\"block block-system block-menu block-system-main-menu
+        header\">\n  \n        <h2 class=\"block-title element-invisible\">Main menu</h2>\n
+        \   \n  <div  class=\"block-content\">  <ul class=\"menu\"><li class=\"first
+        leaf\"><a href=\"/save/https://feministinternet.org/en/about\">About</a></li>\n<li
+        class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/page/contribute\">Contribute</a></li>\n<li
+        class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principles\">Principles</a></li>\n<li
+        class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/events\">Events</a></li>\n<li
+        class=\"expanded hide\"><a href=\"/save/https://feministinternet.org/en/principles\">Principles</a><ul
+        class=\"menu\"><li class=\"first expanded\"><a href=\"/save/https://feministinternet.org/en/access\">Access</a><ul
+        class=\"menu\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/access\">1.
+        Access</a></li>\n<li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/information\">2.
+        Information</a></li>\n<li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/usage\">3.
+        Usage</a></li>\n</ul></li>\n<li class=\"expanded\"><a href=\"/save/https://feministinternet.org/en/movements\">Movements</a><ul
+        class=\"menu\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/governance\">6.
+        Governance</a></li>\n<li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/resistance\">4.
+        Resistance</a></li>\n<li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/movement-building\">5.
+        Movement Building</a></li>\n</ul></li>\n<li class=\"expanded\"><a href=\"/save/https://feministinternet.org/en/economy\">Economy</a><ul
+        class=\"menu\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/economy\">7.
+        Economy</a></li>\n<li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/open-source\">8.
+        Open source</a></li>\n</ul></li>\n<li class=\"expanded\"><a href=\"/save/https://feministinternet.org/en/expression\">Expression</a><ul
+        class=\"menu\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/amplify\">9.
+        Amplify</a></li>\n<li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/expression\">10.
+        Expression</a></li>\n<li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/consent\">11.
+        Consent</a></li>\n<li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/pornography\">12.
+        Pornography</a></li>\n</ul></li>\n<li class=\"expanded\"><a href=\"/save/https://feministinternet.org/en/embodiment\">Embodiment</a><ul
+        class=\"menu\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/principle/privacy-data\">13.
+        Privacy &amp; Data</a></li>\n<li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/memory\">14.
+        Memory</a></li>\n<li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/anonymity\">15.
+        Anonymity</a></li>\n<li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/principle/children\">16.
+        Children</a></li>\n<li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/principle/violence\">17.
+        Violence</a></li>\n</ul></li>\n<li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/governance\">Governance</a></li>\n<li
+        class=\"last leaf\" id=\"https://anchor.fm/kira-allmann/episodes/the-feminist-principles-of-the-internet-e2ivv2/a-a6elvm\"><a
+        href=\"/save/https://feministinternet.org/en/https%3A//anchor.fm/kira-allmann/episodes/the-feminist-principles-of-the-internet-e2ivv2/a-a6elvm\"
+        title=\"The feminist principles of the internet - podcast from &quot;Wish
+        I got that on tape.&quot;\" id=\"https://anchor.fm/kira-allmann/episodes/the-feminist-principles-of-the-internet-e2ivv2/a-a6elvm\">The
+        feminist principles of the internet - podcast from &quot;Wish I got that on
+        tape.&quot;</a></li>\n</ul></li>\n<li class=\"last leaf\"><a href=\"/save/https://feministinternet.org/en/download\">Download</a></li>\n</ul>
+        \ </div>\n  </section>\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/block.tpl.php'
+        -->\n\n\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/region.tpl.php'
+        -->\n\n\n      </section>\n      <!--/.l-header-region -->\n        </div>\n
+        \ </header>\n  <!--/.l-header -->\n\n  \n  \n  \n  <!--.l-main -->\n  <main
+        role=\"main\" class=\"row l-main\">\n    <!-- .l-main region -->\n    <div
+        class=\" main columns\">\n      \n      <a id=\"main-content\"></a>\n\n      \n
+        \           <div class=\"l-content\">\n                  <div class=\"page-tabs\">\n
+        \                                 </div>\n        \n        \n        \n\n<!--
+        THEME DEBUG -->\n<!-- CALL: theme('region') -->\n<!-- FILE NAME SUGGESTIONS:\n
+        \  * region--content.tpl.php\n   x region.tpl.php\n-->\n<!-- BEGIN OUTPUT
+        from 'sites/all/themes/fpi/templates/system/region.tpl.php' -->\n  \n\n<!--
+        THEME DEBUG -->\n<!-- CALL: theme('block') -->\n<!-- FILE NAME SUGGESTIONS:\n
+        \  * block--system--main.tpl.php\n   * block--system.tpl.php\n   * block--content.tpl.php\n
+        \  x block.tpl.php\n-->\n<!-- BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/block.tpl.php'
+        -->\n\n      \n    \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('views_view')
+        -->\n<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/views/theme/views-view.tpl.php'
+        -->\n<div class=\"view view-home view-id-home view-display-id-page view-dom-id-79743a1b0192b3778ce60365e9d6134d\">\n
+        \       \n  \n  \n      <div class=\"view-content\">\n      \n\n<!-- THEME
+        DEBUG -->\n<!-- CALL: theme('flexslider_views') -->\n<!-- BEGIN OUTPUT from
+        'sites/all/modules/contrib/flexslider/flexslider_views/theme/flexslider-views.tpl.php'
+        -->\n\n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('flexslider') -->\n<!-- BEGIN
+        OUTPUT from 'sites/all/modules/contrib/flexslider/theme/flexslider.tpl.php'
+        -->\n<div  id=\"flexslider-1\" class=\"flexslider optionset-default\">\n  <ul
+        class=\"slides\"><li data-thumb=\"https://feministinternet.org/sites/default/files/styles/large/public/history_bubble.png?itok=-Y5qO_Vu\"
+        data-thumb-alt=\"\" data-thumbcaption=\"Background\">\n\n<!-- THEME DEBUG
+        -->\n<!-- CALL: theme('entity') -->\n<!-- FILE NAME SUGGESTIONS:\n   * field-collection-item--1.tpl.php\n
+        \  * field-collection-item--field-slides--full.tpl.php\n   * field-collection-item--field-slides.tpl.php\n
+        \  x field-collection-item.tpl.php\n   * entity.tpl.php\n-->\n<!-- BEGIN OUTPUT
+        from 'sites/all/modules/contrib/field_collection/field-collection-item.tpl.php'
+        -->\n<div class=\"entity entity-field-collection-item field-collection-item-field-slides
+        clearfix\">\n  <div class=\"content\">\n    \n\n<!-- THEME DEBUG -->\n<!--
+        CALL: theme('field') -->\n<!-- FILE NAME SUGGESTIONS:\n   * field--field-image--field-slides.tpl.php\n
+        \  * field--field-slides.tpl.php\n   * field--field-image.tpl.php\n   * field--image.tpl.php\n
+        \  x field.tpl.php\n-->\n<!-- BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php'
+        -->\n<!--\nThis file is not used by Drupal core, which uses theme functions
+        instead.\nSee /save/http://api.drupal.org/api/function/theme_field/7 for details.\nAfter
+        copying this file to your theme's folder and customizing it, remove this\nHTML
+        comment.\n-->\n<div class=\"image field-image field-field-image\">\n    <div
+        class=\"field-items\" class=\"field-items\">\n          <div class=\"field-item
+        even\" class=\"field-item even\"><img src=\"/save/_embed/https://feministinternet.org/sites/default/files/styles/large/public/history_bubble.png?itok=-Y5qO_Vu\"
+        width=\"480\" height=\"480\" alt=\"\" /></div>\n      </div>\n</div>\n\n<!--
+        END OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n\n<div
+        class=\"required-fields group-text field-group-html-element\">\n\n<!-- THEME
+        DEBUG -->\n<!-- CALL: theme('field') -->\n<!-- FILE NAME SUGGESTIONS:\n   *
+        field--title-field--field-slides.tpl.php\n   * field--field-slides.tpl.php\n
+        \  * field--title-field.tpl.php\n   * field--text.tpl.php\n   x field.tpl.php\n-->\n<!--
+        BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n<!--\nThis
+        file is not used by Drupal core, which uses theme functions instead.\nSee
+        /save/http://api.drupal.org/api/function/theme_field/7 for details.\nAfter
+        copying this file to your theme's folder and customizing it, remove this\nHTML
+        comment.\n-->\n<div class=\"field field-name-title-field field-type-text field-label-hidden
+        field-wrapper field-text field-title-field\">\n    <div class=\"field-items\"
+        class=\"field-items\">\n          <div class=\"field-item even\" class=\"field-item
+        even\"><h3 class=\"slide-title\">Background</h3>\n</div>\n      </div>\n</div>\n\n<!--
+        END OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n\n\n\n<!--
+        THEME DEBUG -->\n<!-- CALL: theme('field') -->\n<!-- FILE NAME SUGGESTIONS:\n
+        \  * field--field-body--field-slides.tpl.php\n   * field--field-slides.tpl.php\n
+        \  * field--field-body.tpl.php\n   * field--text-long.tpl.php\n   x field.tpl.php\n-->\n<!--
+        BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n<!--\nThis
+        file is not used by Drupal core, which uses theme functions instead.\nSee
+        /save/http://api.drupal.org/api/function/theme_field/7 for details.\nAfter
+        copying this file to your theme's folder and customizing it, remove this\nHTML
+        comment.\n-->\n<div class=\"field field-name-field-body field-type-text-long
+        field-label-hidden field-wrapper field-text-long field-field-body\">\n    <div
+        class=\"field-items\" class=\"field-items\">\n          <div class=\"field-item
+        even\" class=\"field-item even\"><p>The Feminist Principles of the Internet
+        (FPI) are a set of statements that together provide a framework for women's
+        movements to articulate and explore issues related to technology. They offer
+        a gender and sexual rights lens on critical internet-related rights. The FPI
+        have been organized into 5 clusters, with 17 Principles in total. Read up
+        on them individually by clicking <a href=\"/save/https://feministinternet.org/en/principles\"
+        rel=\"nofollow\">Principles</a> or click on <a href=\"/save/https://feministinternet.org/en/download\"
+        rel=\"nofollow\">Download</a> for a PDF version of the full set of Principles.</p>\n</div>\n
+        \     </div>\n</div>\n\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php'
+        -->\n\n\n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('field') -->\n<!-- FILE
+        NAME SUGGESTIONS:\n   * field--field-cta--field-slides.tpl.php\n   * field--field-slides.tpl.php\n
+        \  * field--field-cta.tpl.php\n   * field--link-field.tpl.php\n   x field.tpl.php\n-->\n<!--
+        BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n<!--\nThis
+        file is not used by Drupal core, which uses theme functions instead.\nSee
+        /save/http://api.drupal.org/api/function/theme_field/7 for details.\nAfter
+        copying this file to your theme's folder and customizing it, remove this\nHTML
+        comment.\n-->\n<div class=\"field field-name-field-cta field-type-link-field
+        field-label-hidden field-wrapper field-link-field field-field-cta\">\n    <div
+        class=\"field-items\" class=\"field-items\">\n          <div class=\"field-item
+        even\" class=\"field-item even\"><a href=\"/save/https://feministinternet.org/en/about\">Find
+        out more...</a></div>\n      </div>\n</div>\n\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php'
+        -->\n\n</div>  </div>\n</div>\n\n<!-- END OUTPUT from 'sites/all/modules/contrib/field_collection/field-collection-item.tpl.php'
+        -->\n\n</li>\n<li data-thumb=\"https://feministinternet.org/sites/default/files/logo-emblem-text_1.png\"
+        data-thumb-alt=\"\" data-thumbcaption=\"Explore\">\n\n<!-- THEME DEBUG -->\n<!--
+        CALL: theme('entity') -->\n<!-- FILE NAME SUGGESTIONS:\n   * field-collection-item--2.tpl.php\n
+        \  * field-collection-item--field-slides--full.tpl.php\n   * field-collection-item--field-slides.tpl.php\n
+        \  x field-collection-item.tpl.php\n   * entity.tpl.php\n-->\n<!-- BEGIN OUTPUT
+        from 'sites/all/modules/contrib/field_collection/field-collection-item.tpl.php'
+        -->\n<div class=\"entity entity-field-collection-item field-collection-item-field-slides
+        clearfix\">\n  <div class=\"content\">\n    <div class=\"required-fields group-text
+        field-group-html-element\">\n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('field')
+        -->\n<!-- FILE NAME SUGGESTIONS:\n   * field--title-field--field-slides.tpl.php\n
+        \  * field--field-slides.tpl.php\n   * field--title-field.tpl.php\n   * field--text.tpl.php\n
+        \  x field.tpl.php\n-->\n<!-- BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php'
+        -->\n<!--\nThis file is not used by Drupal core, which uses theme functions
+        instead.\nSee /save/http://api.drupal.org/api/function/theme_field/7 for details.\nAfter
+        copying this file to your theme's folder and customizing it, remove this\nHTML
+        comment.\n-->\n<div class=\"field field-name-title-field field-type-text field-label-hidden
+        field-wrapper field-text field-title-field\">\n    <div class=\"field-items\"
+        class=\"field-items\">\n          <div class=\"field-item even\" class=\"field-item
+        even\"><h3 class=\"slide-title\">Explore</h3>\n</div>\n      </div>\n</div>\n\n<!--
+        END OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n\n\n\n<!--
+        THEME DEBUG -->\n<!-- CALL: theme('field') -->\n<!-- FILE NAME SUGGESTIONS:\n
+        \  * field--field-body--field-slides.tpl.php\n   * field--field-slides.tpl.php\n
+        \  * field--field-body.tpl.php\n   * field--text-long.tpl.php\n   x field.tpl.php\n-->\n<!--
+        BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n<!--\nThis
+        file is not used by Drupal core, which uses theme functions instead.\nSee
+        /save/http://api.drupal.org/api/function/theme_field/7 for details.\nAfter
+        copying this file to your theme's folder and customizing it, remove this\nHTML
+        comment.\n-->\n<div class=\"field field-name-field-body field-type-text-long
+        field-label-hidden field-wrapper field-text-long field-field-body\">\n    <div
+        class=\"field-items\" class=\"field-items\">\n          <div class=\"field-item
+        even\" class=\"field-item even\"><p>\n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('block')
+        -->\n<!-- FILE NAME SUGGESTIONS:\n   * block--views--clusters-block-1.tpl.php\n
+        \  * block--views.tpl.php\n   * block--.tpl.php\n   x block.tpl.php\n-->\n<!--
+        BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/block.tpl.php' -->\n<section
+        class=\"block block-views block-views-clusters-block-1\">\n  \n      \n  <div
+        \ class=\"block-content\">  \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('views_view')
+        -->\n<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/views/theme/views-view.tpl.php'
+        -->\n<div class=\"view view-clusters view-id-clusters view-display-id-block_1
+        view-dom-id-b763b9cfa0c8b8b512c2d3db16bf3f18\">\n            <div class=\"view-header\">\n
+        \     \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('file_entity') -->\n<!--
+        FILE NAME SUGGESTIONS:\n   * file--115--full.tpl.php\n   * file--115.tpl.php\n
+        \  * file--image--png--full.tpl.php\n   * file--image--png.tpl.php\n   * file--image--full.tpl.php\n
+        \  * file--image.tpl.php\n   * file-entity.tpl.php\n-->\n<!-- BEGIN OUTPUT
+        from 'sites/all/modules/contrib/file_entity/file_entity.tpl.php' -->\n<div
+        id=\"file-115\" class=\"file file-image file-image-png\">\n\n        <h2 class=\"element-invisible\"><a
+        href=\"/save/https://feministinternet.org/en/file/logo-emblem-textpng-1\">logo-emblem-text.png</a></h2>\n
+        \   \n  \n  <div class=\"content\">\n    <img src=\"/save/_embed/https://feministinternet.org/sites/default/files/logo-emblem-text_1.png\"
+        width=\"513\" height=\"434\" alt=\"\" />  </div>\n\n  \n</div>\n\n<!-- END
+        OUTPUT from 'sites/all/modules/contrib/file_entity/file_entity.tpl.php' -->\n\n
+        \   </div>\n  \n  \n  \n      <div class=\"view-content\">\n      \n\n<!--
+        THEME DEBUG -->\n<!-- CALL: theme('views_view_unformatted') -->\n<!-- BEGIN
+        OUTPUT from 'sites/all/themes/fpi/templates/views/views-view-unformatted.tpl.php'
+        -->\n\n                <div class=\"views-row views-row-1 views-row-odd views-row-first\">\n
+        \           \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('views_view_fields')
+        -->\n<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n  \n  <div class=\"views-field views-field-name\">        <h3 class=\"field-content\"><a
+        href=\"/save/https://feministinternet.org/en/movements\">Movements</a></h3>
+        \ </div>\n<!-- END OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n\n          </div>\n                <div class=\"views-row views-row-2
+        views-row-even\">\n            \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('views_view_fields')
+        -->\n<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n  \n  <div class=\"views-field views-field-name\">        <h3 class=\"field-content\"><a
+        href=\"/save/https://feministinternet.org/en/access\">Access</a></h3>  </div>\n<!--
+        END OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n\n          </div>\n                <div class=\"views-row views-row-3
+        views-row-odd\">\n            \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('views_view_fields')
+        -->\n<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n  \n  <div class=\"views-field views-field-name\">        <h3 class=\"field-content\"><a
+        href=\"/save/https://feministinternet.org/en/expression\">Expression</a></h3>
+        \ </div>\n<!-- END OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n\n          </div>\n                <div class=\"views-row views-row-4
+        views-row-even\">\n            \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('views_view_fields')
+        -->\n<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n  \n  <div class=\"views-field views-field-name\">        <h3 class=\"field-content\"><a
+        href=\"/save/https://feministinternet.org/en/economy\">Economy</a></h3>  </div>\n<!--
+        END OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n\n          </div>\n                <div class=\"views-row views-row-5
+        views-row-odd views-row-last\">\n            \n\n<!-- THEME DEBUG -->\n<!--
+        CALL: theme('views_view_fields') -->\n<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n  \n  <div class=\"views-field views-field-name\">        <h3 class=\"field-content\"><a
+        href=\"/save/https://feministinternet.org/en/embodiment\">Embodiment</a></h3>
+        \ </div>\n<!-- END OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-fields.tpl.php'
+        -->\n\n          </div>\n            \n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/views/views-view-unformatted.tpl.php'
+        -->\n\n    </div>\n  \n  \n  \n  \n  \n  \n</div>\n<!-- END OUTPUT from 'sites/all/modules/contrib/views/theme/views-view.tpl.php'
+        -->\n\n  </div>\n  </section>\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/block.tpl.php'
+        -->\n\n</p>\n</div>\n      </div>\n</div>\n\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php'
+        -->\n\n</div>  </div>\n</div>\n\n<!-- END OUTPUT from 'sites/all/modules/contrib/field_collection/field-collection-item.tpl.php'
+        -->\n\n</li>\n<li data-thumb=\"https://feministinternet.org/sites/default/files/styles/large/public/amplify.png?itok=ziIgUQC-\"
+        data-thumb-alt=\"\" data-thumbcaption=\"Contribute\">\n\n<!-- THEME DEBUG
+        -->\n<!-- CALL: theme('entity') -->\n<!-- FILE NAME SUGGESTIONS:\n   * field-collection-item--19.tpl.php\n
+        \  * field-collection-item--field-slides--full.tpl.php\n   * field-collection-item--field-slides.tpl.php\n
+        \  x field-collection-item.tpl.php\n   * entity.tpl.php\n-->\n<!-- BEGIN OUTPUT
+        from 'sites/all/modules/contrib/field_collection/field-collection-item.tpl.php'
+        -->\n<div class=\"entity entity-field-collection-item field-collection-item-field-slides
+        clearfix\">\n  <div class=\"content\">\n    \n\n<!-- THEME DEBUG -->\n<!--
+        CALL: theme('field') -->\n<!-- FILE NAME SUGGESTIONS:\n   * field--field-image--field-slides.tpl.php\n
+        \  * field--field-slides.tpl.php\n   * field--field-image.tpl.php\n   * field--image.tpl.php\n
+        \  x field.tpl.php\n-->\n<!-- BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php'
+        -->\n<!--\nThis file is not used by Drupal core, which uses theme functions
+        instead.\nSee /save/http://api.drupal.org/api/function/theme_field/7 for details.\nAfter
+        copying this file to your theme's folder and customizing it, remove this\nHTML
+        comment.\n-->\n<div class=\"image field-image field-field-image\">\n    <div
+        class=\"field-items\" class=\"field-items\">\n          <div class=\"field-item
+        even\" class=\"field-item even\"><img src=\"/save/_embed/https://feministinternet.org/sites/default/files/styles/large/public/amplify.png?itok=ziIgUQC-\"
+        width=\"480\" height=\"480\" alt=\"\" /></div>\n      </div>\n</div>\n\n<!--
+        END OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n\n<div
+        class=\"required-fields group-text field-group-html-element\">\n\n<!-- THEME
+        DEBUG -->\n<!-- CALL: theme('field') -->\n<!-- FILE NAME SUGGESTIONS:\n   *
+        field--title-field--field-slides.tpl.php\n   * field--field-slides.tpl.php\n
+        \  * field--title-field.tpl.php\n   * field--text.tpl.php\n   x field.tpl.php\n-->\n<!--
+        BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n<!--\nThis
+        file is not used by Drupal core, which uses theme functions instead.\nSee
+        /save/http://api.drupal.org/api/function/theme_field/7 for details.\nAfter
+        copying this file to your theme's folder and customizing it, remove this\nHTML
+        comment.\n-->\n<div class=\"field field-name-title-field field-type-text field-label-hidden
+        field-wrapper field-text field-title-field\">\n    <div class=\"field-items\"
+        class=\"field-items\">\n          <div class=\"field-item even\" class=\"field-item
+        even\"><h3 class=\"slide-title\">Contribute</h3>\n</div>\n      </div>\n</div>\n\n<!--
+        END OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n\n\n\n<!--
+        THEME DEBUG -->\n<!-- CALL: theme('field') -->\n<!-- FILE NAME SUGGESTIONS:\n
+        \  * field--field-body--field-slides.tpl.php\n   * field--field-slides.tpl.php\n
+        \  * field--field-body.tpl.php\n   * field--text-long.tpl.php\n   x field.tpl.php\n-->\n<!--
+        BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n<!--\nThis
+        file is not used by Drupal core, which uses theme functions instead.\nSee
+        /save/http://api.drupal.org/api/function/theme_field/7 for details.\nAfter
+        copying this file to your theme's folder and customizing it, remove this\nHTML
+        comment.\n-->\n<div class=\"field field-name-field-body field-type-text-long
+        field-label-hidden field-wrapper field-text-long field-field-body\">\n    <div
+        class=\"field-items\" class=\"field-items\">\n          <div class=\"field-item
+        even\" class=\"field-item even\"><p>If you're passionate about feminism and
+        technology, there are multiple ways to contribute to the Principles! You can
+        add resources, host a local city conversation, translate the principles, or
+        find new ways to expand the FPIs. Read more on how you can contribute <a href=\"/save/https://feministinternet.org/en/page/contribute\">here.</a>
+        You can also <a href=\"/save/https://feministinternet.org/en/contact\">get
+        in touch</a> with us to learn more.</p>\n</div>\n      </div>\n</div>\n\n<!--
+        END OUTPUT from 'sites/all/themes/fpi/templates/system/field.tpl.php' -->\n\n</div>
+        \ </div>\n</div>\n\n<!-- END OUTPUT from 'sites/all/modules/contrib/field_collection/field-collection-item.tpl.php'
+        -->\n\n</li>\n</ul></div>\n\n<!-- END OUTPUT from 'sites/all/modules/contrib/flexslider/theme/flexslider.tpl.php'
+        -->\n\n\n<!-- END OUTPUT from 'sites/all/modules/contrib/flexslider/flexslider_views/theme/flexslider-views.tpl.php'
+        -->\n\n    </div>\n  \n  \n  \n  \n  \n  \n</div>\n<!-- END OUTPUT from 'sites/all/modules/contrib/views/theme/views-view.tpl.php'
+        -->\n\n  \n  \n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/block.tpl.php'
+        -->\n\n\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/region.tpl.php'
+        -->\n\n      </div>\n    </div>\n    <!--/.l-main region -->\n\n    \n      </main>\n
+        \ <!--/.l-main -->\n\n  \n  \n  <!--.l-footer -->\n  <footer class=\"l-footer
+        \ row\" role=\"contentinfo\">\n          <div class=\"footer columns\">\n
+        \       \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('region') -->\n<!-- FILE
+        NAME SUGGESTIONS:\n   * region--footer.tpl.php\n   x region.tpl.php\n-->\n<!--
+        BEGIN OUTPUT from 'sites/all/themes/fpi/templates/system/region.tpl.php' -->\n
+        \ \n\n<!-- THEME DEBUG -->\n<!-- CALL: theme('block') -->\n<!-- FILE NAME
+        SUGGESTIONS:\n   * block--menu--menu-secondary-menu.tpl.php\n   * block--menu.tpl.php\n
+        \  * block--footer.tpl.php\n   x block.tpl.php\n-->\n<!-- BEGIN OUTPUT from
+        'sites/all/themes/fpi/templates/system/block.tpl.php' -->\n<section class=\"block
+        block-menu block-menu-menu-secondary-menu\">\n  \n      \n  <div  class=\"block-content\">
+        \ <ul class=\"menu\"><li class=\"first leaf\"><a href=\"/save/https://feministinternet.org/en/contact\"
+        title=\"\">Contact</a></li>\n<li class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/faq\">FAQ</a></li>\n<li
+        class=\"leaf\"><a href=\"/save/https://feministinternet.org/en/page/privacy-policy\">Privacy</a></li>\n<li
+        class=\"last leaf\"><a href=\"/save/http://www.apc.org/\" target=\"_blank\">APC.org</a></li>\n</ul>
+        \ </div>\n  </section>\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/block.tpl.php'
+        -->\n\n\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/region.tpl.php'
+        -->\n\n      </div>\n    \n      </footer>\n  <!--/.l-footer -->\n\n  </div>\n<!--/.page
+        -->\n\n<!-- END OUTPUT from 'sites/all/themes/fpi/templates/system/page.tpl.php'
+        -->\n\n  <script src=\"/save/_embed/https://feministinternet.org/sites/default/files/js/js_uTpGZRbRZm_lrt5640lI88hN-6jGIe3E3hxZcagIuss.js\"></script>\n
+        \   <script>\n    (function ($, Drupal, window, document, undefined) {\n      $(document).foundation();\n
+        \   })(jQuery, Drupal, this, this.document);\n  </script>\n</body>\n</html>\n\n<!--
+        END OUTPUT from 'sites/all/themes/fpi/templates/system/html.tpl.php' -->\n\n\n\n\n\n\n<!--\n
+        \    FILE ARCHIVED ON 10:03:21 Mar 12, 2019 AND RETRIEVED FROM THE\n     INTERNET
+        ARCHIVE ON 10:03:22 Mar 12, 2019.\n     JAVASCRIPT APPENDED BY WAYBACK MACHINE,
+        COPYRIGHT INTERNET ARCHIVE.\n\n     ALL OTHER CONTENT MAY ALSO BE PROTECTED
+        BY COPYRIGHT (17 U.S.C.\n     SECTION 108(a)(3)).\n-->\n"
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 10:03:22 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/https://feministinternet.org/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 10:26:01 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '40603'
+      Content-Location:
+      - "/web/20190312102044/https://feministinternet.org/"
+      Set-Cookie:
+      - JSESSIONID=9B50425306CA94ECE984E08CC3DF4296; Path=/; HttpOnly
+      X-Archive-Orig-X-Drupal-Cache:
+      - HIT
+      X-Archive-Orig-Vary:
+      - Cookie,Accept-Encoding
+      X-Archive-Guessed-Charset:
+      - utf-8
+      X-Archive-Orig-X-Generator:
+      - Drupal 7 (http://drupal.org)
+      X-Archive-Orig-X-Frame-Options:
+      - SAMEORIGIN
+      X-Archive-Orig-Server:
+      - Apache/2.4.10
+      X-Archive-Orig-Connection:
+      - close
+      X-Archive-Orig-Last-Modified:
+      - Tue, 12 Mar 2019 09:14:49 GMT
+      X-Archive-Orig-Date:
+      - Tue, 12 Mar 2019 10:20:45 GMT
+      X-Archive-Orig-Etag:
+      - '"1552382089-1"'
+      X-Archive-Orig-Content-Type:
+      - text/html; charset=utf-8
+      X-Archive-Orig-Content-Language:
+      - en
+      X-Archive-Orig-Cache-Control:
+      - public, max-age=60
+      X-Archive-Orig-Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      X-App-Server:
+      - wwwb-app0
+      X-Ts:
+      - "----"
+      X-Cache-Key:
+      - httpsweb.archive.org/save/https://feministinternet.org/ME
+      X-Page-Cache:
+      - HIT
+      X-Location:
+      - save-get
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 10:26:01 GMT
+recorded_with: VCR 4.0.0

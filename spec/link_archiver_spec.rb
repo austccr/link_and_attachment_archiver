@@ -12,11 +12,19 @@ RSpec.describe LinkArchiver do
       LinkArchiver.new(source_url: 'https://foo.org/bar')
     end
 
-    pending 'sends the links to the internet archive' do
+    it 'sends the links to the internet archive' do
+      archiver.links = [
+        { url: 'https://feministinternet.org/' }
+      ]
+
+      VCR.use_cassette('internet_archive', record: :once) do
+        archiver.archive_links
+      end
+
       expect(archiver.links).to eq [
         {
           url: 'https://feministinternet.org/',
-          syndication: 'https://web.archive.org/web/201903120942/https://feministinternet.org/',
+          syndication: 'https://web.archive.org/web/20190312102044/https://feministinternet.org/',
           errors: nil
         }
       ]
