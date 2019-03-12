@@ -9,4 +9,9 @@ class LinkArchiver
     @links = []
     @source_url = source_url
   end
+
+  def parse_html_and_archive_links(string)
+    parse_html(string)
+    archive_links
+  end
 end

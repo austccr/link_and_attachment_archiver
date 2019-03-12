@@ -612,4 +612,114 @@ http_interactions:
       string: ''
     http_version: 
   recorded_at: Tue, 12 Mar 2019 10:41:17 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/http://minerals.org.au/files/190226-peru-australia-free-trade-agreement-will-deliver-investment-and-jobs-australiapdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 11:37:24 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '32253'
+      Content-Location:
+      - "/web/20190312113619/http://minerals.org.au/files/190226-peru-australia-free-trade-agreement-will-deliver-investment-and-jobs-australiapdf"
+      Set-Cookie:
+      - JSESSIONID=1D8667B2F334767750421330689CFE0F; Path=/; HttpOnly
+      X-Archive-Orig-Vary:
+      - Accept-Encoding
+      X-Archive-Guessed-Charset:
+      - utf-8
+      X-Archive-Orig-X-Generator:
+      - Drupal 7 (http://drupal.org)
+      X-Archive-Orig-X-Frame-Options:
+      - SameOrigin
+      X-Archive-Orig-Server:
+      - nginx
+      X-Archive-Orig-Connection:
+      - close
+      X-Archive-Orig-X-Powered-By:
+      - PleskLin
+      X-Archive-Orig-Ms-Author-Via:
+      - DAV
+      X-Archive-Orig-Date:
+      - Tue, 12 Mar 2019 11:36:20 GMT
+      X-Archive-Orig-Link:
+      - <http://minerals.org.au/files/190226-peru-australia-free-trade-agreement-will-deliver-investment-and-jobs-australiapdf>;
+        rel="canonical",<http://minerals.org.au/file/3108>; rel="shortlink"
+      X-Archive-Orig-Content-Type:
+      - text/html; charset=utf-8
+      X-Archive-Orig-Content-Language:
+      - en
+      X-Archive-Orig-Cache-Control:
+      - no-cache, must-revalidate
+      X-Archive-Orig-Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      X-Archive-Orig-X-Content-Type-Options:
+      - nosniff
+      X-App-Server:
+      - wwwb-app55
+      X-Ts:
+      - "----"
+      X-Cache-Key:
+      - httpsweb.archive.org/save/http://minerals.org.au/files/190226-peru-australia-free-trade-agreement-will-deliver-investment-and-jobs-australiapdfME
+      X-Page-Cache:
+      - HIT
+      X-Location:
+      - save-get
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 11:37:24 GMT
+- request:
+    method: head
+    uri: https://web.archive.org/save/https://minerals.org.au/sites/default/files/190226%20Peru-Australia%20Free%20Trade%20Agreement%20will%20deliver%20investment%20and%20jobs%20for%20Australia.pdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 502
+      message: ''
+    headers:
+      Server:
+      - nginx/1.15.8
+      Date:
+      - Tue, 12 Mar 2019 11:37:25 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      X-Archive-Wayback-Runtime-Error:
+      - 'LiveDocumentNotAvailableException: https://minerals.org.au/sites/default/files/190226%20Peru-Australia%20Free%20Trade%20Agreement%20will%20deliver%20investment%20and%20jobs%20for%20Australia.pdf:
+        live document unavailable: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorExceptio'
+      Set-Cookie:
+      - JSESSIONID=A545A68C7E03FDB624E22BEDE4B52280; Path=/; HttpOnly
+      X-App-Server:
+      - wwwb-app4
+      X-Ts:
+      - "----"
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 12 Mar 2019 11:37:25 GMT
 recorded_with: VCR 4.0.0
