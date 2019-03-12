@@ -28,6 +28,15 @@ def archive_links_from_morph_results(current_offset, total_links, total_records)
         archived_at: Time.now.utc.to_s
       )
 
+      # TODO: Attempt to re-archive and update the link if there are errors on the existing record
+      #
+      # This should probably be extracted into lib so that it can be done without pining archive.org redundantly
+      #
+      # Get the existing record with something like
+      # existing_link = ScraperWiki.select(
+      #   "* FROM data WHERE url='#{link[:url]}' AND source_url='#{link[:source_url]}'"
+      # ).last rescue nil
+
       ScraperWiki.save_sqlite([:url, :source_url], link)
 
       total_links += 1
