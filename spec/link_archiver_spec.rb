@@ -32,6 +32,18 @@ RSpec.describe LinkArchiver do
       end
     end
 
+    context 'with a relative URL' do
+      it 'it makes it absolute' do
+        html = '<p>here is some html, with <a href="/files/foobar">a link</a></p>'
+
+        archiver.parse_html(html)
+
+        expect(archiver.links).to eql [
+          { url: 'https://foo.org/files/foobar' }
+        ]
+      end
+    end
+
     context 'when there are two links' do
       it 'takes a string of HTML and extracts the links' do
         html = '<p>here is some html, with <a href="https://feministinternet.org/">a link</a></p><div><a href="https://www.forensic-architecture.org/">another link</a></div>'
