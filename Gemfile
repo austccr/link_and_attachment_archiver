@@ -9,3 +9,7 @@ ruby '2.6.1'
 gem 'scraperwiki', git: 'https://github.com/openaustralia/scraperwiki-ruby.git', branch: 'morph_defaults'
 gem 'pry'
 gem 'rest-client'
+
+group :test do
+  gem 'rspec'
+end
