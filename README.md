@@ -39,3 +39,14 @@ Now, to run the script with your secret key, execute it with `dotenv`:
 ```
 bundle exec dotenv ruby scraper.rb
 ```
+
+## TODOs
+
+* [ ] handle updates
+  * [ ] if we don't have it, archive it
+  * [ ] if we already have the file for this source_url, don't update
+  * [ ] if we have it are there are errors, try again
+* [ ] investigate 302 records
+* [ ] if we get a cert missing https error from archive.org, try the http
+    version of the links.
+* [ ] write a proper description in the readme
