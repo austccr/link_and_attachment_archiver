@@ -50,3 +50,4 @@ bundle exec dotenv ruby scraper.rb
 * [ ] if we get a cert missing https error from archive.org, try the http
     version of the links.
 * [ ] write a proper description in the readme
+* [ ] point this at more sources, like the main lobbywatch archive for example
