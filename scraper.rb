@@ -67,6 +67,28 @@ def archive_links_from_morph_results(feed_url, current_offset, total_links, tota
   end
 end
 
+def archive_links_from_lobbywatch_results(feed_url, current_offset, total_links, total_records)
+  puts "Requesting items #{current_offset + 1} to #{current_offset + PER_PAGE}"
+
+  response = JSON.parse(
+    Typhoeus.get(
+      feed_url, params: { offset: current_offset }
+    ).body
+  )
+
+  response.each do |record|
+    puts "Archiving #{record["url"]}"
+    archiver = LinkArchiver.new(
+      source_url: record["url"],
+      links: [{ url: record["url"] }]
+    )
+
+    archiver.archive_links
+
+    total_records = save_links(archiver, total_records)
+  end
+end
+
 def work_through_morph_results(feed_url)
   current_offset = 0
   total_links = 0
@@ -78,7 +100,13 @@ def work_through_morph_results(feed_url)
 end
 
 def work_through_lobbywatch_items(feed_url)
-  puts 'Sorry, we dont know how to parse Lobbywatch yet'
+  current_offset = 0
+  total_links = 0
+  total_records = 0
+
+  archive_links_from_lobbywatch_results(
+    feed_url, current_offset, total_links, total_records
+  )
 end
 
 FEED_URLS.each do |feed_url|
