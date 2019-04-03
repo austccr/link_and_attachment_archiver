@@ -54,6 +54,7 @@ def archive_links_from_lobbywatch_results(feed_url, current_offset)
   )
 
   response.each do |record|
+    next if record["url"].nil? || record["url"].empty?
     puts "Archiving #{record["url"]}"
     archiver = LinkArchiver.new(
       source_url: record["url"],
