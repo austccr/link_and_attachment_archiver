@@ -5,7 +5,6 @@ require_relative 'lib/link_archiver'
 
 MORPH_API_KEY = ENV['MORPH_API_KEY']
 MORPH_API_URL = 'https://api.morph.io/austccr/mca_media_releases_scraper/data.json'
-PER_PAGE = 5
 
 FEED_URLS = [
   'https://lobby-watch.herokuapp.com/api/v0/items.json',
@@ -39,9 +38,11 @@ def save_links(archiver, totals_counter)
 end
 
 def archive_links_from_morph_results(feed_url, current_offset, total_links, total_records)
-  query = "select * from \"data\" limit #{PER_PAGE} offset #{current_offset}"
+  per_page = 5
 
-  puts "Requesting records #{current_offset + 1} to #{current_offset + PER_PAGE} with '#{query}'"
+  query = "select * from \"data\" limit #{per_page} offset #{current_offset}"
+
+  puts "Requesting records #{current_offset + 1} to #{current_offset + per_page} with '#{query}'"
   response = Typhoeus.get(
     feed_url, params: { key: MORPH_API_KEY, query: query }
   )
@@ -58,8 +59,8 @@ def archive_links_from_morph_results(feed_url, current_offset, total_links, tota
     total_records += 1
   end
 
-  if records_json.count.eql? PER_PAGE
-    current_offset += PER_PAGE
+  if records_json.count.eql? per_page
+    current_offset += per_page
     archive_links_from_morph_results(feed_url, current_offset, total_links, total_records)
   else
     puts "Finished..."
@@ -68,7 +69,8 @@ def archive_links_from_morph_results(feed_url, current_offset, total_links, tota
 end
 
 def archive_links_from_lobbywatch_results(feed_url, current_offset, total_links, total_records)
-  puts "Requesting items #{current_offset + 1} to #{current_offset + PER_PAGE}"
+  per_page = 20
+  puts "Requesting items #{current_offset + 1} to #{current_offset + per_page}"
 
   response = JSON.parse(
     Typhoeus.get(
