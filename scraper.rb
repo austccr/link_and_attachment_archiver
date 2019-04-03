@@ -71,6 +71,10 @@ def work_through_morph_results(feed_url)
   )
 end
 
+def work_through_lobbywatch_items(feed_url)
+  puts 'Sorry, we dont know how to parse Lobbywatch yet'
+end
+
 FEED_URLS.each do |feed_url|
   puts "Searching for records at #{feed_url}"
 
@@ -78,7 +82,7 @@ FEED_URLS.each do |feed_url|
   when feed_url.start_with?('https://api.morph.io')
     work_through_morph_results(feed_url)
   when feed_url.eql?('https://lobby-watch.herokuapp.com/api/v0/items.json')
-    puts 'Sorry, we dont know how to parse Lobbywatch yet'
+    work_through_lobbywatch_items(feed_url)
   else
     puts 'Sorry, we dont know how to parse this feed'
   end
