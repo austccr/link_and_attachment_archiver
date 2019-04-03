@@ -11,33 +11,11 @@ FEED_URLS = [
   MORPH_API_URL
 ]
 
-def save_links(archiver, totals_counter)
-  archiver.links.each do |link|
-    link.merge!(
-      source_url: archiver.source_url,
-      archived_at: Time.now.utc.to_s
-    )
-
-    # TODO: Attempt to re-archive and update the link if there are errors on the existing record
-    #
-    # This should probably be extracted into lib so that it can be done without pining archive.org redundantly
-    #
-    # Get the existing record with something like
-    # existing_link = ScraperWiki.select(
-    #   "* FROM data WHERE url='#{link[:url]}' AND source_url='#{link[:source_url]}'"
-    # ).last rescue nil
-
-    ScraperWiki.save_sqlite([:url, :source_url], link)
-
-    sleep 1
-
-    totals_counter += 1
-  end
-
-  totals_counter
+def save_links(archiver)
+  archiver.save_links_to_sqlite
 end
 
-def archive_links_from_morph_results(feed_url, current_offset, total_links, total_records)
+def archive_links_from_morph_results(feed_url, current_offset)
   per_page = 5
 
   query = "select * from \"data\" limit #{per_page} offset #{current_offset}"
@@ -54,21 +32,18 @@ def archive_links_from_morph_results(feed_url, current_offset, total_links, tota
 
     archiver.parse_html_and_archive_links(record["content"])
 
-    total_links = save_links(archiver, total_links)
-
-    total_records += 1
+    save_links(archiver)
   end
 
   if records_json.count.eql? per_page
     current_offset += per_page
-    archive_links_from_morph_results(feed_url, current_offset, total_links, total_records)
+    archive_links_from_morph_results(feed_url, current_offset)
   else
     puts "Finished #{feed_url}"
-    puts "Archived #{total_links} URLs from #{total_records} records."
   end
 end
 
-def archive_links_from_lobbywatch_results(feed_url, current_offset, total_links, total_records)
+def archive_links_from_lobbywatch_results(feed_url, current_offset)
   per_page = 20
   puts "Requesting items #{current_offset + 1} to #{current_offset + per_page}"
 
@@ -87,39 +62,28 @@ def archive_links_from_lobbywatch_results(feed_url, current_offset, total_links,
 
     archiver.archive_links
 
-    total_records += save_links(archiver, total_records)
+    save_links(archiver)
   end
 
   if response.count.eql? per_page
     current_offset += per_page
 
-    archive_links_from_lobbywatch_results(
-      feed_url, current_offset, total_links, total_records
-    )
+    archive_links_from_lobbywatch_results( feed_url, current_offset)
   else
     puts "Finished #{feed_url}"
-    puts "Archived #{total_records} URLs."
   end
 end
 
 def work_through_morph_results(feed_url)
   current_offset = 0
-  total_links = 0
-  total_records = 0
 
-  archive_links_from_morph_results(
-    feed_url, current_offset, total_links, total_records
-  )
+  archive_links_from_morph_results(feed_url, current_offset)
 end
 
 def work_through_lobbywatch_items(feed_url)
   current_offset = 0
-  total_links = 0
-  total_records = 0
 
-  archive_links_from_lobbywatch_results(
-    feed_url, current_offset, total_links, total_records
-  )
+  archive_links_from_lobbywatch_results(feed_url, current_offset)
 end
 
 FEED_URLS.each do |feed_url|
