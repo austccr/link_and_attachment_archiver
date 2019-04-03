@@ -7,8 +7,8 @@ MORPH_API_KEY = ENV['MORPH_API_KEY']
 MORPH_API_URL = 'https://api.morph.io/austccr/mca_media_releases_scraper/data.json'
 
 FEED_URLS = [
-  'https://lobby-watch.herokuapp.com/api/v0/items.json',
-  MORPH_API_URL
+  MORPH_API_URL,
+  'https://lobby-watch.herokuapp.com/api/v0/items.json'
 ]
 
 def save_links(archiver)
@@ -30,7 +30,7 @@ def archive_links_from_morph_results(feed_url, current_offset)
     puts "Extracting and archiving links from #{record["url"]}"
     archiver = LinkArchiver.new(source_url: record["url"])
 
-    archiver.parse_html_and_archive_links(record["content"])
+    archiver.parse_html_and_archive_links(record["content"], true)
 
     save_links(archiver)
   end
@@ -55,13 +55,12 @@ def archive_links_from_lobbywatch_results(feed_url, current_offset)
 
   response.each do |record|
     next if record["url"].nil? || record["url"].empty?
-    puts "Archiving #{record["url"]}"
     archiver = LinkArchiver.new(
       source_url: record["url"],
       links: [{ url: record["url"] }]
     )
 
-    archiver.archive_links
+    archiver.archive_links(skipped_saved: true)
 
     save_links(archiver)
   end

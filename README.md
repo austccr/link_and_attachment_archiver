@@ -43,10 +43,10 @@ bundle exec dotenv ruby scraper.rb
 ## TODOs
 
 * [x] point this at more sources, like the main lobbywatch archive for example
-* [ ] handle updates
-  * [ ] if we don't have it, archive it
-  * [ ] if we already have the file for this source_url, don't update
-  * [ ] if we have it are there are errors, try again
+* [x] handle updates
+  * [x] if we don't have it, archive it
+  * [x] if we already have the file for this source_url, don't update
+  * [x] if we have it are there are errors, try again
 * [ ] investigate 302 records
 * [ ] if we get a cert missing https error from archive.org, try the http
     version of the links.

@@ -17,7 +17,7 @@ RSpec.describe LinkArchiver do
         { url: 'https://feministinternet.org/' }
       ]
 
-      archiver.archive_links
+      archiver.archive_links(skipped_saved: false)
 
       expect(archiver.links).to eq [
         {
@@ -34,7 +34,7 @@ RSpec.describe LinkArchiver do
           { url: 'https://minerals.org.au' }
         ]
 
-        archiver.archive_links
+        archiver.archive_links(skipped_saved: false)
 
         expect(archiver.links).to eq [
           {
@@ -53,7 +53,7 @@ RSpec.describe LinkArchiver do
           { url: 'https://feministinternet.org/' }
         ]
 
-        archiver.archive_links
+        archiver.archive_links(skipped_saved: false)
 
         expect(archiver.links).to eq [
           {

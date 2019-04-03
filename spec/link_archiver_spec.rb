@@ -32,7 +32,7 @@ RSpec.describe LinkArchiver do
         )
 
         VCR.use_cassette('internet_archive', record: :once) do
-          archiver.parse_html_and_archive_links(html)
+          archiver.parse_html_and_archive_links(html, false)
         end
 
         expect(archiver.links).to eq [
@@ -59,7 +59,7 @@ RSpec.describe LinkArchiver do
         )
 
         VCR.use_cassette('internet_archive', record: :once) do
-          archiver.parse_html_and_archive_links(html)
+          archiver.parse_html_and_archive_links(html, false)
         end
 
         expect(archiver.links).to eq [

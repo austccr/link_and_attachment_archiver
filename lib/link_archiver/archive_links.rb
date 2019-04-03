@@ -1,7 +1,18 @@
 class LinkArchiver
-  def archive_links
+  def archive_links(skipped_saved: false)
     links.each_with_index do |link,i|
-      links[i] = link.merge!(web_archive(link[:url]))
+      if skipped_saved
+        existing_link = ScraperWiki.select(
+          "* FROM data WHERE url='#{link[:url]}' AND source_url='#{source_url}'"
+        ).last rescue nil
+      end
+
+      if skipped_saved && existing_link && existing_link["syndication"]
+        puts "Skipping #{link[:url]}, which is already archived at #{existing_link['syndication']}"
+      else
+        puts "Pinging archive.org with #{link[:url]}" if skipped_saved
+        links[i] = link.merge!(web_archive(link[:url]))
+      end
     end
   end
 
