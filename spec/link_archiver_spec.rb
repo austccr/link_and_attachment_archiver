@@ -7,6 +7,21 @@ RSpec.describe LinkArchiver do
     )
   end
 
+  it 'can be initialized without links' do
+    archiver = LinkArchiver.new(source_url: 'http://foo.net')
+
+    expect(archiver.links).to match []
+  end
+
+  it 'can be initialized with links' do
+    archiver = LinkArchiver.new(
+      source_url: 'http://foo.net',
+      links: [ { url: 'http://bar.org' } ]
+    )
+
+    expect(archiver.links).to match [ { url: 'http://bar.org' } ]
+  end
+
   describe '#parse_html_and_archive_links' do
     context 'example.html' do
       let(:html) { File.read('./spec/fixtures/example.html') }
