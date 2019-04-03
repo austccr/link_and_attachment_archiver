@@ -7,12 +7,17 @@ MORPH_API_KEY = ENV['MORPH_API_KEY']
 MORPH_API_URL = 'https://api.morph.io/austccr/mca_media_releases_scraper/data.json'
 PER_PAGE = 5
 
-def archive_links_from_morph_results(current_offset, total_links, total_records)
+FEED_URLS = [
+  'https://lobby-watch.herokuapp.com/api/v0/items.json',
+  MORPH_API_URL
+]
+
+def archive_links_from_morph_results(feed_url, current_offset, total_links, total_records)
   query = "select * from \"data\" limit #{PER_PAGE} offset #{current_offset}"
 
   puts "Requesting records #{current_offset + 1} to #{current_offset + PER_PAGE} with '#{query}'"
   response = Typhoeus.get(
-    MORPH_API_URL, params: { key: MORPH_API_KEY, query: query }
+    feed_url, params: { key: MORPH_API_KEY, query: query }
   )
 
   records_json = JSON.parse(response.response_body)
@@ -49,16 +54,32 @@ def archive_links_from_morph_results(current_offset, total_links, total_records)
 
   if records_json.count.eql? PER_PAGE
     current_offset += PER_PAGE
-    archive_links_from_morph_results(current_offset, total_links, total_records)
+    archive_links_from_morph_results(feed_url, current_offset, total_links, total_records)
   else
     puts "Finished..."
     puts "Archived #{total_links} urls from #{total_records} records."
   end
 end
 
-current_offset = 0
-total_links = 0
-total_records = 0
+def work_through_morph_results(feed_url)
+  current_offset = 0
+  total_links = 0
+  total_records = 0
 
-puts "Searching for records at #{MORPH_API_URL}"
-archive_links_from_morph_results(current_offset, total_links, total_records)
+  archive_links_from_morph_results(
+    feed_url, current_offset, total_links, total_records
+  )
+end
+
+FEED_URLS.each do |feed_url|
+  puts "Searching for records at #{feed_url}"
+
+  case
+  when feed_url.start_with?('https://api.morph.io')
+    work_through_morph_results(feed_url)
+  when feed_url.eql?('https://lobby-watch.herokuapp.com/api/v0/items.json')
+    puts 'Sorry, we dont know how to parse Lobbywatch yet'
+  else
+    puts 'Sorry, we dont know how to parse this feed'
+  end
+end
