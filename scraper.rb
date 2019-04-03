@@ -63,8 +63,8 @@ def archive_links_from_morph_results(feed_url, current_offset, total_links, tota
     current_offset += per_page
     archive_links_from_morph_results(feed_url, current_offset, total_links, total_records)
   else
-    puts "Finished..."
-    puts "Archived #{total_links} urls from #{total_records} records."
+    puts "Finished #{feed_url}"
+    puts "Archived #{total_links} URLs from #{total_records} records."
   end
 end
 
@@ -87,7 +87,18 @@ def archive_links_from_lobbywatch_results(feed_url, current_offset, total_links,
 
     archiver.archive_links
 
-    total_records = save_links(archiver, total_records)
+    total_records += save_links(archiver, total_records)
+  end
+
+  if response.count.eql? per_page
+    current_offset += per_page
+
+    archive_links_from_lobbywatch_results(
+      feed_url, current_offset, total_links, total_records
+    )
+  else
+    puts "Finished #{feed_url}"
+    puts "Archived #{total_records} URLs."
   end
 end
 
@@ -122,4 +133,6 @@ FEED_URLS.each do |feed_url|
   else
     puts 'Sorry, we dont know how to parse this feed'
   end
+  puts
+  puts
 end
