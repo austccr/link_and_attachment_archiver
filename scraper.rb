@@ -7,6 +7,7 @@ MORPH_API_KEY = ENV['MORPH_API_KEY']
 MORPH_API_URL = 'https://api.morph.io/austccr/mca_media_releases_scraper/data.json'
 
 FEED_URLS = [
+  'https://api.morph.io/austccr/bca_media_releases_scraper/data.json',
   'https://lobby-watch.herokuapp.com/api/v0/items.json',
   MORPH_API_URL
 ]
