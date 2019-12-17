@@ -4,6 +4,7 @@ require 'json'
 require_relative 'lib/link_archiver'
 
 MORPH_API_KEY = ENV['MORPH_API_KEY']
+LW_KEY = ENV['MORPH_LW_KEY']
 
 FEED_URLS = [
   'https://api.morph.io/austccr/bca_media_releases_scraper/data.json',
@@ -43,21 +44,21 @@ def archive_links_from_morph_results(feed_url, current_offset)
   end
 end
 
-def archive_links_from_lobbywatch_results(feed_url, current_offset)
+def archive_links_from_lobbywatch_results(feed_url, current_page)
   per_page = 20
-  puts "Requesting items #{current_offset + 1} to #{current_offset + per_page}"
+  puts "Requesting items from page #{current_page}"
 
   response = JSON.parse(
     Typhoeus.get(
-      feed_url, params: { offset: current_offset }
+      feed_url, params: { key: LW_KEY, page: current_page }
     ).body
   )
 
   response.each do |record|
-    next if record["url"].nil? || record["url"].empty?
+    next if record["document"]["url"].nil? || record["document"]["url"].empty?
     archiver = LinkArchiver.new(
-      source_url: record["url"],
-      links: [{ url: record["url"] }]
+      source_url: record["document"]["url"],
+      links: [{ url: record["document"]["url"] }]
     )
 
     archiver.archive_links(skipped_saved: true)
@@ -66,9 +67,9 @@ def archive_links_from_lobbywatch_results(feed_url, current_offset)
   end
 
   if response.count.eql? per_page
-    current_offset += per_page
+    current_page += 1
 
-    archive_links_from_lobbywatch_results( feed_url, current_offset)
+    archive_links_from_lobbywatch_results(feed_url, current_page)
   else
     puts "Finished #{feed_url}"
   end
@@ -81,9 +82,9 @@ def work_through_morph_results(feed_url)
 end
 
 def work_through_lobbywatch_items(feed_url)
-  current_offset = 0
+  current_page = 1
 
-  archive_links_from_lobbywatch_results(feed_url, current_offset)
+  archive_links_from_lobbywatch_results(feed_url, current_page)
 end
 
 FEED_URLS.each do |feed_url|
